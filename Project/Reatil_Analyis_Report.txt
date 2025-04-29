@@ -1,0 +1,60 @@
+**Retail Business Performance & Profitability Analysis**
+
+---
+
+**1. Introduction**
+This project focuses on analyzing the business performance and profitability of a retail company using the Superstore dataset. The goal was to identify underperforming product categories, understand seasonal sales patterns, and assess the impact of inventory days on profitability. The project was carried out using SQL, Python, and Tableau, simulating a real-world business scenario where data-driven decisions are essential for improving operational efficiency and increasing profit margins.
+
+---
+
+**2. Tools Used**
+
+- **SQL (MySQL Workbench):** For data cleaning and profitability analysis
+- **Python (Pandas, Numpy, Seaborn):** For correlation and data manipulation
+- **Tableau:** For interactive dashboards and visualization
+
+---
+
+**3. Steps Involved in Building the Project**
+
+1. **Data Preparation:**
+
+   - The Superstore.csv dataset was imported into MySQL.
+   - A table named `superstore` was created, and NULL/missing values were checked and cleaned.
+
+2. **SQL Analysis:**
+
+   - Profit Margin was calculated by Category and Sub-Category.
+   - Seasonal trends were analyzed by extracting the month from `Order_Date` and summing quantities.
+
+3. **Python Analysis:**
+
+   - The cleaned dataset was exported to CSV.
+   - A new column, `Inventory_Days`, was simulated using random integers (15 to 90).
+   - Correlation between `Inventory_Days` and `Profit` was analyzed.
+   - A scatter plot was created to visualize this relationship.
+
+4. **Tableau Dashboard:**
+
+   - Visuals included Profit Margin by Category, Sales by Month, Inventory vs Profit (scatter), and Top Sub-Categories.
+   - Filters for Region, Category, and Month were added.
+   - KPI Cards were created for Total Sales, Total Profit, and Avg Inventory Days.
+
+---
+
+**4. Key Insights**
+
+- **Furniture** and **Office Supplies** had lower profit margins compared to **Technology**.
+- Sales peaked during **November and December**, showing strong seasonal patterns.
+- Categories with **high Inventory Days** often correlated with **lower profit margins**.
+- **Binders** and **Tables** showed consistently poor profitability and may need re-evaluation.
+
+---
+
+**5. Conclusion**
+This project demonstrated the value of combining SQL for data analysis, Python for statistical insight, and Tableau for storytelling. The company can optimize inventory levels, focus marketing efforts on high-performing seasons, and discontinue or promote underperforming products based on this analysis.
+
+---
+
+**Submitted by:** Shaik Sameer Ali B.Tech Data Science, Acharya Nagarjuna University
+
